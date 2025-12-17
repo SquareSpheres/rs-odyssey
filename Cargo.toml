@@ -1,0 +1,36 @@
+[workspace]
+members = [
+    "shared",
+    "project1-echo-server",
+    "project2-async-chat",
+    "project3-file-pipeline",
+    "project4-generic-structs",
+    "project5-event-scheduler",
+    "project6-webrtc-cli",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[workspace.dependencies]
+# Common dependencies
+tokio = { version = "1.35", features = ["full"] }
+anyhow = "1.0"
+thiserror = "1.0"
+clap = { version = "4.4", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+lto = true
+

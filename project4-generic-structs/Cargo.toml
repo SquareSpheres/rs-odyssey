@@ -1,0 +1,16 @@
+[package]
+name = "project4-generic-structs"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+shared = { path = "../shared" }
+
+[dev-dependencies]
+
+[[bench]]
+name = "benchmarks"
+harness = false
+
