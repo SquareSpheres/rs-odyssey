@@ -37,9 +37,9 @@ Build a server that can accept messages from clients and reply correctly, handli
 
 ### Potential Features / Extensions
 - Echo server that prefixes responses with timestamps using `chrono`
-- Logging connection attempts using `log` and `env_logger`
+- Logging Connection attempts using `log` and `env_logger`
 - Timeout handling for idle clients using `std::time`
-- Statistics tracking (bytes transferred, connection duration)
+- Statistics tracking (bytes transferred, Connection duration)
 - Configurable port and buffer sizes via command-line args (`clap`)
 - Simple protocol with message framing (length prefix)
 - Custom error types using `thiserror`
@@ -274,7 +274,7 @@ Build an event-driven task scheduler with async support. Learn closures, trait o
 Build a fully working CLI WebRTC application supporting peer-to-peer messaging and file transfer. Apply all prior knowledge to a real-world networking project.
 
 ### Success Criteria
-- Peer-to-peer signaling and connection establishment work reliably
+- Peer-to-peer signaling and Connection establishment work reliably
 - Data channels can send and receive text messages and files
 - Optional: audio streaming between peers
 - Safe handling of callbacks and asynchronous events using Rust's type system
@@ -292,7 +292,7 @@ Build a fully working CLI WebRTC application supporting peer-to-peer messaging a
 - Streaming large files with async iterators or channels
 - Error handling across FFI boundaries if using C libraries
 - Lifetime management with callbacks
-- Type-safe state machines for connection states
+- Type-safe state machines for Connection states
 
 ### Potential Features / Extensions
 - CLI chat between peers with multiple simultaneous connections
@@ -329,10 +329,10 @@ Build a fully working CLI WebRTC application supporting peer-to-peer messaging a
 - `unsafe` code guidelines and best practices
 
 ### Suggested Implementation Phases
-1. **Phase 1:** Basic signaling and connection establishment
+1. **Phase 1:** Basic signaling and Connection establishment
 2. **Phase 2:** Data channel text messaging
 3. **Phase 3:** File transfer with chunking and progress
-4. **Phase 4:** Multi-peer support and connection management
+4. **Phase 4:** Multi-peer support and Connection management
 5. **Phase 5:** Audio streaming (optional)
 6. **Phase 6:** Polish, error handling, and performance optimization
 
